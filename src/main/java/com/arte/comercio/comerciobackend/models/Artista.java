@@ -1,6 +1,7 @@
 package com.arte.comercio.comerciobackend.models;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Data // lombok
 @NoArgsConstructor  // junto con Data, para no usar getters, setters y constructores
+@AllArgsConstructor
 @Entity // Entidad
 @Table(name= "artistas") // le cambio el nombre para que matchee con mi DB
 @SequenceGenerator(name = "GN_artista", sequenceName = "GN_artista", allocationSize = 1) // armo una secuencia (un contador automático) para el id

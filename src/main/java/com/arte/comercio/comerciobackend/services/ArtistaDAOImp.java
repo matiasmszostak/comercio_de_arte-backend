@@ -12,7 +12,8 @@ import java.util.Optional;
 public class ArtistaDAOImp implements ArtistaDAO{
 
     @Autowired // Inyección de dependencia ArtistaRepository en ArtistaDAO || Para no instanciar y que no entre en conflicto
-    ArtistaRepository artistaRepository;
+    private ArtistaRepository artistaRepository;
+    // Esta inyección de dependencias también se puede hacer poniendola en el constructor vacío (ClienteRepository repositorio) como parametro
 
 
 

@@ -1,5 +1,6 @@
 package com.arte.comercio.comerciobackend.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -7,6 +8,7 @@ import javax.persistence.Embeddable;
 
 @Data // lombok
 @NoArgsConstructor  // junto con Data, para no usar getters, setters y constructores
+@AllArgsConstructor
 @Embeddable
 public class Direccion {
 

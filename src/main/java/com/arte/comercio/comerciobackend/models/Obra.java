@@ -1,6 +1,7 @@
 package com.arte.comercio.comerciobackend.models;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @SequenceGenerator(name = "GN_obra", sequenceName = "GN_obra", allocationSize = 1)
 @Data // lombok
 @NoArgsConstructor  // junto con Data, para no usar getters, setters y constructores
+@AllArgsConstructor
 public class Obra {
 
     @Id

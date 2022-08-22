@@ -11,7 +11,7 @@ public interface ClienteDAO {
     Optional<Cliente> buscarClientePorApellido(String apellido);
 
 
-    Cliente altaNuevoCliente(Cliente cliente);
+    Cliente altaNuevoCliente(Cliente cliente) throws Exception;
 
 
 }
